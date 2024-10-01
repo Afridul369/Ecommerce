@@ -22,13 +22,14 @@ const Navbar = () => {
                 <Menu menuname={'About'}/>
                 <Menu menuname={'Contacts'}/>
                 <Menu menuname={'Journal'}/>
+                <Menu menuname={'Blog'}/>
             </Flex>
         </div>
     </Flex>
    </Container> 
    </div>
 
-   
+
    </>
   )
 }
