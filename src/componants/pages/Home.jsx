@@ -3,6 +3,7 @@ import Navbar from "../Navbar";
 import Category from "../Category";
 import Banner from "../Banner";
 import Promo from "../Promo";
+import Product from "../Product";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Category />
       <Banner/>
       <Promo/>
+     <Product/>
     </>
   );
 };
