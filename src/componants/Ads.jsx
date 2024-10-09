@@ -8,7 +8,7 @@ const Ads = () => {
     <>
     <div className="mb-28">
     <Container>
-        <Image imgSrc={Adss} imgAlt={'Ads'} className={''}/>
+        <Image imgSrc={Adss} imgAlt={'Ads'} className={'bg-no-repeat bg-cover bg-center'}/>
     </Container>
     </div>
     </>
