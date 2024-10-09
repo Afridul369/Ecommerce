@@ -14,7 +14,7 @@ export default {
         
       },
       colors: {
-        headeingC: '#767676',
+        headingC: '#767676',
         hoverheadeingC: '#262626',
         categorybg: '#F5F5F3',
       },
