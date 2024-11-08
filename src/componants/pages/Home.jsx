@@ -7,6 +7,7 @@ import Product from "../Product";
 import Product02 from "../Product02";
 import Ads from "../Ads";
 import Product03 from "../Product03";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -15,10 +16,11 @@ const Home = () => {
       <Category />
       <Banner/>
       <Promo/>
-     <Product/>
-     <Product02/>
-     <Ads/>
+     <Product />
+
+     {/* <Ads/>
      <Product03/>
+     <Footer/> */}
     </>
   );
 };
