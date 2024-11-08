@@ -4,9 +4,7 @@ import Category from "../Category";
 import Banner from "../Banner";
 import Promo from "../Promo";
 import Product from "../Product";
-import Product02 from "../Product02";
 import Ads from "../Ads";
-import Product03 from "../Product03";
 import Footer from "../Footer";
 
 const Home = () => {
@@ -17,6 +15,8 @@ const Home = () => {
       <Banner/>
       <Promo/>
      <Product />
+     <Ads/>
+  
 
      {/* <Ads/>
      <Product03/>

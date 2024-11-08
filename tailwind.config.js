@@ -17,6 +17,7 @@ export default {
         headingC: '#767676',
         hoverheadeingC: '#262626',
         categorybg: '#F5F5F3',
+        arrorbg: '#c7c7c7',
       },
     },
   },
