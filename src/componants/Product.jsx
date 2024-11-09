@@ -10,12 +10,17 @@ import Bag1 from '../assets/bag1.png'
 import Bag2 from '../assets/bag2.png'
 import Puta from '../assets/puta.png'
 import Jar from '../assets/jar.png'
+import Cap from '../assets/cap.png'
+import Table from '../assets/table.png'
+import Headphone from '../assets/headphone.png'
+import Sunglass from '../assets/sunglass.png'
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import Container from './Container'
 import PrevArrow from './PrevArrow'
 import NextArrow from './NextArrow'
 import Text from './Text'
+import Flex from './Flex'
 
 const Product = () => {
 
@@ -57,7 +62,7 @@ const Product = () => {
  
  <div className="mb-28">
  <Container>
- <Slider {...settings}>
+ <Flex >
     <Products imgSrc={Jar}
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
@@ -74,30 +79,30 @@ const Product = () => {
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
     />
-    </Slider>
+    </Flex>
  </Container>
  </div>
  
  <div className="mb-28">
  <Container>
- <Slider {...settings}>
-    <Products imgSrc={Jar}
+ <Flex >
+    <Products imgSrc={Cap}
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
     />
-    <Products imgSrc={Bag1}
+    <Products imgSrc={Table}
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
     />
-    <Products imgSrc={Puta}
+    <Products imgSrc={Headphone}
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
     />
-    <Products imgSrc={Bag2}
+    <Products imgSrc={Sunglass}
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
     />
-    </Slider>
+    </Flex>
  </Container>
  </div>
     </>

@@ -18,6 +18,7 @@ export default {
         hoverheadeingC: '#262626',
         categorybg: '#F5F5F3',
         arrorbg: '#c7c7c7',
+        footercolor: '#6D6D6D',
       },
     },
   },
