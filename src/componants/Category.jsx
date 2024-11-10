@@ -6,6 +6,9 @@ import Bars from '../assets/Icons/Bars'
 import { FaSearch,FaUser,FaCaretDown,FaShoppingCart } from "react-icons/fa";
 import List from "./List"
 import Listitems from "./Listitems"
+import Image from "./Image"
+import CartEmpty from "../assets/cartEmpty.png"
+import Badge from "./Badge"
 
 
 const Category = () => {
@@ -91,14 +94,27 @@ const Category = () => {
             <div onClick={handleCartDrop} className="cursor-pointer">
             <FaShoppingCart  className="ml-8"/>
             <div className="hidden relative" ref={CartRef}>
-                 <div className="w-[150px] absolute right-0 mt-2 bg-red-300 ">
+              <div className="w-[280px] absolute right-0 mt-2 bg-white p-4">
+                <div className=" mx-10">
+                <Image imgSrc={CartEmpty} imgAlt={'CartEmpty'} className={'mb-1'}/>
+                <Text text={'Shop'} as={'h3'} className={'w-[100px] text-center items-center bg-hoverheadeingC text-white text-sm font-dm font-bold py-3 mx-8'}/>
+                </div>
+              </div>
+                 {/* <div className="w-[280px] absolute right-0 mt-2 bg-red-300 ">
                      <div className=" p-4">
                       ijuhbikbnkjb
                      </div>
-                     <div className=" p-4 bg-white">
-                      ijuhbikbnkjb
+                     <div className=" p-3 bg-white">
+                     <Flex className={'gap-x-1 mb-2'}>
+                      <Text text={'Subtotal:'} as={'h3'} className={'text-headingC text-base font-dm'}/>
+                      <Text text={'$44.00'} as={'h3'} className={'text-hoverheadeingC text-base font-dm font-bold'}/>
+                     </Flex>
+                     <Flex className={'gap-x-4'}>
+                     <Text text={'View Cart'} as={'h3'} className={'text-hoverheadeingC text-sm font-dm font-bold py-3 px-6 border-2 border-black inline-block hover:text-white hover:bg-black duration-500'}/>
+                     <Text text={'Checkout'} as={'h3'} className={'text-hoverheadeingC text-sm font-dm font-bold py-3 px-6 border-2 border-black inline-block hover:text-white hover:bg-black duration-500'}/>
+                     </Flex>
                      </div>
-                 </div>
+                 </div> */}
             </div>
             </div>
             

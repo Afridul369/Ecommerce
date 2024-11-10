@@ -56,6 +56,22 @@ const Product = () => {
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
     />
+     <Products imgSrc={Jar}
+    text1={'Basic Crew Neck Tee'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    />
+    <Products imgSrc={Bag1}
+    text1={'Basic Crew Neck Tee'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    />
+    <Products imgSrc={Puta}
+    text1={'Basic Crew Neck Tee'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    />
+    <Products imgSrc={Bag2}
+    text1={'Basic Crew Neck Tee'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    />
     </Slider>
  </Container>
  </div>
@@ -83,28 +99,7 @@ const Product = () => {
  </Container>
  </div>
  
- <div className="mb-28">
- <Container>
- <Flex >
-    <Products imgSrc={Cap}
-    text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
-    />
-    <Products imgSrc={Table}
-    text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
-    />
-    <Products imgSrc={Headphone}
-    text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
-    />
-    <Products imgSrc={Sunglass}
-    text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
-    />
-    </Flex>
- </Container>
- </div>
+ 
     </>
   )
 }
