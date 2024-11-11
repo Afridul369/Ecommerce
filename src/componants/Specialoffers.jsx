@@ -18,19 +18,19 @@ const Specialoffers = () => {
  <Flex >
     <Products imgSrc={Cap}
     text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'} text7={'Black'}
     />
     <Products imgSrc={Table}
     text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'} text7={'Black'}
     />
     <Products imgSrc={Headphone}
     text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'} text7={'Black'}
     />
     <Products imgSrc={Sunglass}
     text1={'Basic Crew Neck Tee'}
-    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'}
+    text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'} text7={'Black'}
     />
     </Flex>
  </Container>

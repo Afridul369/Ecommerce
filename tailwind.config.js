@@ -20,6 +20,7 @@ export default {
         arrorbg: '#c7c7c7',
         footercolor: '#6D6D6D',
         bartext: '#bdbdbd',
+        hoverbg: '[#F5F5F5]',
       },
     },
   },
