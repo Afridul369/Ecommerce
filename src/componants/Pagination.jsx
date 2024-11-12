@@ -2,19 +2,24 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import ReactPaginate from 'react-paginate';
 import Products from './Products'
+import ShopProduct from './ShopProduct';
+import Data from '../componants/Data'
+import Puta from '../assets/puta.png'
 
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+
 
 function Items({ currentItems }) {
   return (
     <>
+      <div className="flex flex-wrap gap-x-2">
       {currentItems &&
         currentItems.map((item) => (
-          <div>
-            <Products/>
+          <div className=''>
+            <ShopProduct title={item.title} image={item.image} price={item.price} tag={item.tag}/>
           </div>
         ))}
+      </div>
     </>
   );
 }
@@ -26,12 +31,12 @@ function Pagination({ itemsPerPage }) {
 
   const endOffset = itemOffset + itemsPerPage;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
-  const currentItems = items.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(items.length / itemsPerPage);
+  const currentItems = Data.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(Data.length / itemsPerPage);
 
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % items.length;
+    const newOffset = (event.selected * itemsPerPage) % Data.length;
     console.log(
       `User requested page number ${event.selected}, which is offset ${newOffset}`
     );

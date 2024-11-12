@@ -129,30 +129,3 @@ const Category = () => {
 };
 
 export default Category;
-
-
-// let drofRef = useRef(null)
-// let handleDrop =()=>{
-//  // console.log(drofRef.current);
-
-//  if(drofRef.current.style.display=='block'){
-//    drofRef.current.style.display=='none'
-//  }else{
-//    drofRef.current.style.display=='block'
-//  }
- 
-// }
-
-
-// <div onClick={handleDrop} className="cursor-pointer">
-//           <Bars className=''/>
-//             <div className="bg-teal-400 hidden " Ref={drofRef} >
-//             <ul>
-//                <li>shorif</li>
-//                <li>shorif</li>
-//                <li>shorif</li>
-//                <li>shorif</li>
-//                <li>shorif</li>           
-//              </ul>
-//             </div>
-//              </div>

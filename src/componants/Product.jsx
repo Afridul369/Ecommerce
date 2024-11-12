@@ -78,7 +78,7 @@ const Product = () => {
  
  <div className="mb-28">
  <Container>
- <Flex className={'justify-between'}>
+ <Flex >
     <Products imgSrc={Jar}
     text1={'Basic Crew Neck Tee'}
     text2={'$44.00'} text3={'New'} text4={'Add to Wish List'} text5={'Compare'} text6={'Add to Cart'} text7={'Black'}

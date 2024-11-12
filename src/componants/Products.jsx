@@ -14,11 +14,12 @@ const Product = ({imgSrc,imgAlt,text1,text2,text3,text4,text5,text6,text7}) => {
   return (
    <>
    <Container>
+      <div className="w-full">
       <div>
-      <div className="relative w-full group px-4 overflow-y-hidden">
+      <div className="relative  group px-3 overflow-y-hidden">
     <Image imgSrc={imgSrc} imgAlt={imgAlt} className={''}/>
     <Badge text={text3}  className={'top-5 left-8 absolute'}/>
-    <div className=" py-6 px-6 bg-[#F5F5F5]/75 w-[370px] ml-4 duration-500 absolute bottom-[-156px] left-0  group-hover:bottom-0">
+    <div className=" py-6 px-6 bg-[#F5F5F5]/75 w-[370px] ml-3 duration-500 absolute bottom-[-156px] left-0  group-hover:bottom-0">
     <Flex className={'items-center justify-end gap-x-3 mb-4'}> 
             <Text text={text4} as={'p'} className='text-headingC text-base font-dm hover:font-bold hover:text-hoverheadeingC duration-300 '/>
             <FaHeart />
@@ -41,6 +42,7 @@ const Product = ({imgSrc,imgAlt,text1,text2,text3,text4,text5,text6,text7}) => {
     </Flex>
     <Text text={text7} as='p' className='text-headingC  text-base font-dm'/>
     </div> 
+      </div>
    </Container>
    </>
   )

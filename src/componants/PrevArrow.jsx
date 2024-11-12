@@ -6,7 +6,7 @@ const PrevArrow = (props) => {
     const { className,  onClick } = props;
   return (
     <div
-      className={`${className} text-2xl text-white bg-arrorbg inline-block rounded-full p-3 absolute z-10 top-40  left-5 `}  
+      className={`${className} text-2xl text-white bg-arrorbg inline-block rounded-full p-3 absolute z-10 top-40  left-4 `}  
       onClick={onClick}
     > <HiArrowLongLeft /> </div>
   );
