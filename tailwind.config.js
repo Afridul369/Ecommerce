@@ -21,6 +21,8 @@ export default {
         footercolor: '#6D6D6D',
         bartext: '#bdbdbd',
         hoverbg: '[#F5F5F5]',
+        pagiborder: '#f2f2f2',
+        pagitext: '#878787',
       },
     },
   },

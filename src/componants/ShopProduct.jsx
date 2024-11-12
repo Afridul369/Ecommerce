@@ -2,14 +2,11 @@ import React from 'react'
 import Container from './Container'
 import Flex from './Flex'
 import Products from './Products'
-import Headphone from '../assets/headphone.png'
-import Bag1 from '../assets/bag1.png'
-import Puta from '../assets/puta.png'
 
 const ShopProduct = ({title,price,image,tag}) => {
   return (
     <>
-    <div className="">
+    <div className="mb-10">
      <Container>
         <Flex>
         <Products imgSrc={image}

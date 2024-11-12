@@ -5,6 +5,8 @@ import Products from './Products'
 import ShopProduct from './ShopProduct';
 import Data from '../componants/Data'
 import Puta from '../assets/puta.png'
+import Flex from './Flex';
+import Text from './Text';
 
 
 
@@ -46,15 +48,27 @@ function Pagination({ itemsPerPage }) {
   return (
     <>
       <Items currentItems={currentItems} />
+      <Flex className="justify-between">
       <ReactPaginate
         breakLabel="..."
-        nextLabel="next >"
+        nextLabel=""
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
-        previousLabel="< previous"
+        previousLabel=""
         renderOnZeroPageCount={null}
+        containerClassName='flex gap-x-3'
+        pageLinkClassName='py-3 px-4 bg-white border-2 border-pagiborder text-pagitext hover:text-white hover:bg-black duration-500'
       />
+        <h1>Products from {itemOffset+1} to {endOffset} of {Data.length}</h1>
+
+        {/* =================if endoffset doesn't match with Data.;ength================ */}
+        {/* <h1>Products from {itemOffset+1} to {endOffset<Data.length?endOffset:Data.length} of {Data.length}</h1> */}
+         {/* =================if endoffset doesn't match with Data.;ength================ */}
+     
+      </Flex>
+
+
     </>
   );
 }
