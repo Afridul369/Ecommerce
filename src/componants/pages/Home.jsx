@@ -12,18 +12,14 @@ import Specialoffers from "../Specialoffers";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Category />
+      
       <Banner/>
       <Promo/>
      <Product />
      <Ads/>
      <Specialoffers/>
-    <Footer/>
+    
 
-     {/* <Ads/>
-     <Product03/>
-     <Footer/> */}
     </>
   );
 };

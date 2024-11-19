@@ -14,7 +14,7 @@ const Product = ({imgSrc,imgAlt,text1,text2,text3,text4,text5,text6,text7}) => {
   return (
    <>
    <Container>
-      <div className="w-full">
+      <div className="w-full  ">
       <div>
       <div className="relative  group px-3 overflow-y-hidden">
     <Image imgSrc={imgSrc} imgAlt={imgAlt} className={''}/>
