@@ -11,6 +11,8 @@ import RootLayout from './componants/RootLayout';
 import Error from './componants/Error';
 import About from './componants/pages/About';
 import Contacts from './componants/pages/Contacts';
+import MyAccount from './componants/MyAccount';
+import Login from './componants/Login';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +23,8 @@ const router = createBrowserRouter(
       <Route path='/shop' element={<Shop/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contacts' element={<Contacts/>}/>
-      {/* <Route path='/login' element={<Login/>}/> */}
+      <Route path='/myaccount' element={<MyAccount/>}/>
+      <Route path='/journal' element={<Login/>}/>
       <Route path='*' element={<Error/>}/>
     </Route>
   </Route>

@@ -81,7 +81,7 @@ const Category = () => {
             <FaCaretDown />
             <div className="hidden" ref={DownRef}>
                  <div className="absolute right-0 mt-2 w-[200px] bg-white">
-                  <Link to={'/login'}>
+                  <Link to={'/myaccount'}>
                   <div className="group">
                   <Listitems itemname={'My Account'} className="py-3 text-center group-hover:bg-black text-hoverheadeingC text-sm font-dm group-hover:font-bold group-hover:text-white duration-500"></Listitems>
                   </div>
