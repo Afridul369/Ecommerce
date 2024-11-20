@@ -9,6 +9,7 @@ import Listitems from "./Listitems"
 import Image from "./Image"
 import CartEmpty from "../assets/cartEmpty.png"
 import Badge from "./Badge"
+import { Link } from "react-router-dom"
 
 
 const Category = () => {
@@ -80,9 +81,11 @@ const Category = () => {
             <FaCaretDown />
             <div className="hidden" ref={DownRef}>
                  <div className="absolute right-0 mt-2 w-[200px] bg-white">
+                  <Link to={'/login'}>
                   <div className="group">
                   <Listitems itemname={'My Account'} className="py-3 text-center group-hover:bg-black text-hoverheadeingC text-sm font-dm group-hover:font-bold group-hover:text-white duration-500"></Listitems>
                   </div>
+                  </Link>
                   <div className="group">
                   <Listitems itemname={'Log Out'} className="py-3 text-center group-hover:bg-black text-hoverheadeingC text-sm font-dm group-hover:font-bold group-hover:text-white duration-500"></Listitems>
                   </div>                  

@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Category from "./Category";
 import Container from "./Container";
 import Text from "./Text";
 import { FaSearch } from "react-icons/fa";
