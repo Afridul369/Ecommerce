@@ -16,7 +16,7 @@ const SignUp = () => {
             <Flex className={'items-center'}>
             <Text as='h1' text={'Home'} className='text-headingC text-[12px] font-sans '/>
             <MdOutlineChevronRight className='text-headingC text-[12px] font-sans'/>
-            <Text as='h1' text={'About'} className='text-headingC text-[12px] font-sans '/>
+            <Text as='h1' text={'Sign Up'} className='text-headingC text-[12px] font-sans '/>
             </Flex>
             </div>
             <div className="mb-32 border-b ">

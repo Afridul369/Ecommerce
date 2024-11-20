@@ -18,9 +18,9 @@ const Navbar = () => {
         </div>
         <div className="w-[90%]">
             <Flex className={'justify-center gap-x-7'}> 
-                <Link to='/' className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
+                <NavLink to='/' className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
                 <Menu menuname={'Home'}/>
-                </Link>
+                </NavLink>
                 <NavLink to='/shop'  className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
                 <Menu menuname={'Shop'}/>
                 </NavLink>
