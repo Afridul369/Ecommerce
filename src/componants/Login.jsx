@@ -20,12 +20,12 @@ const Login = () => {
                 <div className="border-b">
                   <Text as='p' text='Email Address' className='text-base text-hoverheadeingC font-bold font-dm mb-4'/>
                   {/* <Text as='p' text='company@domain.com' className='text-sm text-headingC font-dm mb-4'/> */}
-                  <input type="email" className='text-sm text-headingC font-dm mb-4'/>
+                  <input type="email" placeholder='company@domain.com' className='text-sm text-headingC font-dm mb-4'/>
                 </div>
                 <div className="border-b">
                   <Text as='p' text='Email Address' className='text-base text-hoverheadeingC font-bold font-dm mb-4'/>
-                  {/* <Text as='p' text='company@domain.com' className='text-sm text-headingC font-dm mb-4'/> */}
-                  <input type='password' className='text-sm text-headingC font-dm mb-4'/>
+                  {/* <Text as='p' text='..........' className='text-sm text-headingC font-dm mb-4'/> */}
+                  <input type='password' placeholder='.......' className='text-sm text-headingC font-dm mb-4'/>
                 </div>
               </Flex>
             </div>
