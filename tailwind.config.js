@@ -25,6 +25,7 @@ export default {
         pagitext: '#878787',
         inputborder: '#F0F0F0',
         border: '#f0f0f0',
+        Cartbg: '#f5f5f3',
       },
     },
   },

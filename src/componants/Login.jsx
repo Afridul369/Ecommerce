@@ -39,7 +39,7 @@ const Login = () => {
               </Flex>
             </div>
             <div className="mb-16 border-b border-border">
-            <Button text='Log In' className={'w-[200px] text-center py-4 text-sm font-dm font-bold bg-white text-gray-950 hover:text-white hover:bg-black duration-500 border border-black mb-16'}/>
+            <Button text='Log In' className={'w-[200px] text-center py-4 text-sm font-dm font-bold bg-white text-black hover:text-white hover:bg-black duration-500 border border-black mb-16'}/>
             </div>
             <Text as='h1' text={'New Customer'} className='text-[39px] font-bold font-dm text-hoverheadeingC mb-12'/>
             <Text as='h1' text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem"} className='text-base text-headingC font-dm mb-1'/>
