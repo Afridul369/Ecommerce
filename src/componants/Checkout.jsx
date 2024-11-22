@@ -83,7 +83,40 @@ const Checkout = () => {
             </div>
             <div className="mt-32">
             <Text as='h1' text={"Your Order"} className='text-[39px]  text-hoverheadeingC font-bold mb-14 font-dm '/>
-            
+            <div className="mb-16">
+            <Flex>
+                <div className="border border-border p-4 w-[315px]">
+                    <Text as='p' text={"Product"} className='text-base text-hoverheadeingC font-bold font-dm '/>                   
+                </div>
+                <div className="border border-border p-4 w-[315px]">
+                <Text as='p' text={"Total"} className='text-base text-headingC  font-dm '/>              
+                </div>
+            </Flex>
+            <Flex>
+                <div className="border border-border p-4 w-[315px]">
+                    <Text as='p' text={"Product name x 1"} className='text-base text-hoverheadeingC font-bold font-dm '/>                   
+                </div>
+                <div className="border border-border p-4 w-[315px]">
+                <Text as='p' text={"389.99 $"} className='text-base text-headingC  font-dm '/>              
+                </div>
+            </Flex>
+            <Flex>
+                <div className="border border-border p-4 w-[315px]">
+                    <Text as='p' text={"Subtotal"} className='text-base text-hoverheadeingC font-bold font-dm '/>                   
+                </div>
+                <div className="border border-border p-4 w-[315px]">
+                <Text as='p' text={"389.99 $"} className='text-base text-headingC  font-dm '/>              
+                </div>
+            </Flex>
+            <Flex>
+                <div className="border border-border p-4 w-[315px]">
+                    <Text as='p' text={"Total"} className='text-base text-hoverheadeingC font-bold font-dm '/>                   
+                </div>
+                <div className="border border-border p-4 w-[315px]">
+                <Text as='p' text={"389.99 $"} className='text-base text-headingC  font-dm '/>              
+                </div>
+            </Flex>
+            </div>
             </div>
        </Container>
     </div>
