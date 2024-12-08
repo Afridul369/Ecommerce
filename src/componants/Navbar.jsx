@@ -18,19 +18,19 @@ const Navbar = () => {
         </div>
         <div className="w-[90%]">
             <Flex className={'justify-center gap-x-7'}> 
-                <NavLink to='/' className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
+                <NavLink to='/'>
                 <Menu menuname={'Home'}/>
                 </NavLink>
-                <NavLink to='/shop'  className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
+                <NavLink to='/shop' >
                 <Menu menuname={'Shop'}/>
                 </NavLink>
-                <Link to='/about'  className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
+                <Link to='/about' >
                 <Menu menuname={'About'}/>
                 </Link>
-                <Link to='/contacts'  className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
+                <Link to='/cart' >
                 <Menu menuname={'Contacts'}/>
                 </Link>
-                <Link to='/journal'  className={({isActive}) => isActive ? 'text-hoverheadeingC' : 'text-headingC'}>
+                <Link to='/journal' >
                 <Menu menuname={'Journal'}/>
                 </Link>
                 

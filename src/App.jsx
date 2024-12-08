@@ -14,8 +14,9 @@ import Contacts from './componants/pages/Contacts';
 import MyAccount from './componants/MyAccount';
 import Login from './componants/Login';
 import SignUp from './componants/SignUp';
-import Cart from './componants/Cart';
+
 import Checkout from './componants/Checkout';
+import Cart from './componants/Cart';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +26,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<Home/>}/>
       <Route path='/shop' element={<Shop/>}/>
       <Route path='/about' element={<About/>}/>
-      <Route path='/contacts' element={<Contacts/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       <Route path='/myaccount' element={<MyAccount/>}/>
       <Route path='/journal' element={<Checkout/>}/>
       <Route path='*' element={<Error/>}/>

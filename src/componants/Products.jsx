@@ -8,8 +8,14 @@ import { FaArrowsRotate, } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import Badge from './Badge'
 import Price from './Price'
+import { useDispatch } from 'react-redux'
+import { addCart } from '../Redux/Slices/cartSlice'
 
-const Product = ({imgSrc,imgAlt,text1,text2,text3,text4,text5,text6,text7}) => {
+const Product = ({item,imgSrc,imgAlt,text1,text2,text3,text7}) => {
+  const disPatch = useDispatch();
+  const handleAddToCart=()=>{
+   disPatch(addCart({...item,quantity:1}))
+  }
 
   return (
    <>
@@ -21,15 +27,15 @@ const Product = ({imgSrc,imgAlt,text1,text2,text3,text4,text5,text6,text7}) => {
     <Badge text={text3}  className={'top-5 left-8 absolute'}/>
     <div className=" py-6 px-6 bg-[#F5F5F5]/75 w-[370px] ml-3 duration-500 absolute bottom-[-156px] left-0  group-hover:bottom-0">
     <Flex className={'items-center justify-end gap-x-3 mb-4'}> 
-            <Text text={text4} as={'p'} className='text-headingC text-base font-dm hover:font-bold hover:text-hoverheadeingC duration-300 '/>
+            <Text text={"Add to Wish List"} as={'p'} className='text-headingC text-base font-dm hover:font-bold hover:text-hoverheadeingC duration-300 '/>
             <FaHeart />
         </Flex>
         <Flex className={'items-center justify-end gap-x-3 mb-4 '}> 
-            <Text text={text5} as={'p'} className='text-headingC text-base font-dm hover:font-bold hover:text-hoverheadeingC duration-300 '/>
+            <Text text={"Compare"} as={'p'} className='text-headingC text-base font-dm hover:font-bold hover:text-hoverheadeingC duration-300 '/>
             <FaArrowsRotate/>
         </Flex>
         <Flex className={'items-center justify-end gap-x-3'}> 
-            <Text text={text6} as={'p'} className='text-headingC text-base font-dm hover:font-bold hover:text-hoverheadeingC duration-300 '/>
+            <Text text={"Add to Cart"} as={'button'} onClick={handleAddToCart} className='text-headingC text-base font-dm hover:font-bold hover:text-hoverheadeingC duration-300 '/>
             <FaShoppingCart />
         </Flex>
     </div>
