@@ -30,7 +30,7 @@ const Navbar = () => {
                 <Link to='/cart' >
                 <Menu menuname={'Contacts'}/>
                 </Link>
-                <Link to='/journal' >
+                <Link to='/productcart' >
                 <Menu menuname={'Journal'}/>
                 </Link>
                 
