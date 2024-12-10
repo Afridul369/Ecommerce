@@ -17,9 +17,9 @@ const Banner = () => {
   return (
     <>
     <Slider {...settings}>
-     <Image imgSrc={bannerimg} className={'bg-no-repeat bg-center bg-cover w-full'}/>
-     <Image imgSrc={bannerimg} className={'bg-no-repeat bg-center bg-cover w-full'}/>
-     <Image imgSrc={bannerimg} className={'bg-no-repeat bg-center bg-cover w-full'}/>
+      <Image imgSrc={bannerimg} className={'bg-no-repeat bg-center bg-cover w-full'}/>
+      <Image imgSrc={bannerimg} className={'bg-no-repeat bg-center bg-cover w-full'}/>
+      <Image imgSrc={bannerimg} className={'bg-no-repeat bg-center bg-cover w-full'}/>
     </Slider>
      
     </>

@@ -27,7 +27,7 @@ const Navbar = () => {
                 <Link to='/about' >
                 <Menu menuname={'About'}/>
                 </Link>
-                <Link to='/cart' >
+                <Link to='/my' >
                 <Menu menuname={'Contacts'}/>
                 </Link>
                 <Link to='/productcart' >
