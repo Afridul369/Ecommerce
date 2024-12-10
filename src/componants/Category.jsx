@@ -55,7 +55,7 @@ const Category = () => {
                     <div onClick={handleBarDrop} className="cursor-pointer">
                       <Bars />
                         <div className="hidden" ref={BarRef} >
-                          <ul className="mt-4 text-bartext absolute bg-hoverheadeingC pl-5 w-[260px] ">
+                          <ul className="mt-4 text-bartext absolute z-20 bg-hoverheadeingC pl-5 w-[260px] ">
                             <li className="py-4 hover:text-white hover:font-bold hover:ml-2 duration-300 ease-in-out">Accesories</li>
                             <li className="py-4 hover:text-white hover:font-bold hover:ml-2 duration-300 ease-in-out">Furniture</li>
                             <li className="py-4 hover:text-white hover:font-bold hover:ml-2 duration-300 ease-in-out">Electronics</li>
@@ -69,7 +69,7 @@ const Category = () => {
                   </Flex>
               </div>
               <div className="w-[70%] text-center relative">
-                <input type="text" placeholder="Search Products" className="p-5 bg-white w-4/5" />
+                <input type="text" placeholder="Search Products" className="p-5 font- font-dm bg-white w-4/5" />
                 <FaSearch className="absolute top-1/2 -translate-y-1/2 right-40"/>
               </div>
               <div className="w-[15%]">
@@ -79,7 +79,7 @@ const Category = () => {
                         <div onClick={handleDownDrop} className="cursor-pointer">
                           <FaCaretDown />
                             <div className="hidden" ref={DownRef}>
-                                <div className="absolute right-0 mt-2 w-[200px] bg-white">
+                                <div className="absolute z-20 right-0 mt-2 w-[200px] bg-white">
                                   <Link to={'/myaccount'}>
                                     <div className="group">
                                       <Listitems itemname={'My Account'} className="py-3 text-center group-hover:bg-black text-hoverheadeingC text-sm font-dm group-hover:font-bold group-hover:text-white duration-500"></Listitems>
@@ -97,11 +97,11 @@ const Category = () => {
                       <FaShoppingCart  className="ml-8"/>
                       </Link>
                       <div className="hidden relative" ref={CartRef}>
-                        <div className="w-[280px] absolute right-0 mt-2 bg-white p-4">
-                          <div className=" mx-10">
-                          <Image imgSrc={CartEmpty} imgAlt={'CartEmpty'} className={'mb-1'}/>
-                          <Text text={'Shop'} as={'h3'} className={'w-[100px] text-center items-center bg-hoverheadeingC text-white text-sm font-dm font-bold py-3 mx-8'}/>
-                          </div>
+                        <div className="w-[280px] absolute z-20 right-0 mt-2 bg-white p-4">
+                            <div className=" mx-10">
+                            <Image imgSrc={CartEmpty} imgAlt={'CartEmpty'} className={'mb-1'}/>
+                            <Text text={'Shop'} as={'h3'} className={'w-[100px] text-center items-center bg-hoverheadeingC text-white text-sm font-dm font-bold py-3 mx-8'}/>
+                            </div>
                         </div>
                           {/* <div className="w-[280px] absolute right-0 mt-2 bg-red-300 ">
                               <div className=" p-4">

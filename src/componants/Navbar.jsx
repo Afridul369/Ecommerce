@@ -12,12 +12,12 @@ const Navbar = () => {
    <>
    <div className=" py-7">
    <Container>
-    <Flex>
-        <div className="w-[10%]">
+    <Flex className={'justify-between'}>
+        <div className="">
             <Link to='/'><Image imgSrc={Logo} className={'w-28'}/></Link>
         </div>
-        <div className="w-[90%]">
-            <Flex className={'justify-center gap-x-7'}> 
+        <div className="">
+            <Flex className={'items-center gap-x-7'}> 
                 <NavLink to='/'>
                 <Menu menuname={'Home'}/>
                 </NavLink>
@@ -32,9 +32,7 @@ const Navbar = () => {
                 </Link>
                 <Link to='/productcart' >
                 <Menu menuname={'Journal'}/>
-                </Link>
-                
-               
+                </Link> 
             </Flex>
         </div>
     </Flex>
