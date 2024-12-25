@@ -50,9 +50,8 @@ const Category = () => {
       <div className="bg-categorybg py-7">
         <Container>
           <Flex className={'justify-between  items-center'}>
-              <div className="w-[15%]">
-                  <Flex className={'items-center gap-x-2'}>
-                    <div onClick={handleBarDrop} className="cursor-pointer">
+              <div className="w-[15%]">     
+                  <div onClick={handleBarDrop} className="flex items-center gap-x-2 cursor-pointer">
                       <Bars />
                         <div className="hidden" ref={BarRef} >
                           <ul className="mt-4 text-bartext absolute z-20 bg-hoverheadeingC pl-5 w-[260px] ">
@@ -62,11 +61,10 @@ const Category = () => {
                             <li className="py-4 hover:text-white hover:font-bold hover:ml-2 duration-300 ease-in-out">Clothes</li>
                             <li className="py-4 hover:text-white hover:font-bold hover:ml-2 duration-300 ease-in-out">Bags</li>
                             <li className="py-4 hover:text-white hover:font-bold hover:ml-2 duration-300 ease-in-out">Home appliances</li>
-                          </ul>
-                        </div>
-                    </div>
-                      <Text text={'Shop by Category'} as={'h3'} />
-                  </Flex>
+                        </ul>
+                      </div>
+                    <Text text={'Shop by Category'} as={'h3'} />
+                  </div>   
               </div>
               <div className="w-[70%] text-center relative">
                 <input type="text" placeholder="Search Products" className="p-5 font- font-dm bg-white w-4/5" />
@@ -75,8 +73,8 @@ const Category = () => {
               <div className="w-[15%]">
                   <Flex className={'gap-x-2 justify-end'}>
                     <Flex className="relative">
-                        <FaUser />
-                        <div onClick={handleDownDrop} className="cursor-pointer">
+                        <div onClick={handleDownDrop} className="flex cursor-pointer">
+                          <FaUser />
                           <FaCaretDown />
                             <div className="hidden" ref={DownRef}>
                                 <div className="absolute z-20 right-0 mt-2 w-[200px] bg-white">

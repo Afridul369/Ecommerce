@@ -7,6 +7,7 @@ import Logo from '../assets/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 
 
+
 const Navbar = () => {
   return (
    <>
@@ -18,21 +19,21 @@ const Navbar = () => {
         </div>
         <div className="">
             <Flex className={'items-center gap-x-7'}> 
-                <NavLink to='/'>
-                <Menu menuname={'Home'}/>
+                <NavLink to='/' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                    <Menu menuname={'Home'}/>
                 </NavLink>
-                <NavLink to='/shop' >
-                <Menu menuname={'Shop'}/>
+                <NavLink to='/shop'  className={({ isActive }) =>`${isActive ? "font-bold text-black" : ""}`}>
+                    <Menu menuname={'Shop'}/>
                 </NavLink>
-                <Link to='/about' >
-                <Menu menuname={'About'}/>
-                </Link>
-                <Link to='/my' >
-                <Menu menuname={'Contacts'}/>
-                </Link>
-                <Link to='/productcart' >
-                <Menu menuname={'Journal'}/>
-                </Link> 
+                <NavLink to='/about' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                    <Menu menuname={'About'}/>
+                </NavLink>
+                <NavLink to='/contacts' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                    <Menu menuname={'Contacts'}/>
+                </NavLink>
+                <NavLink to='/productcart' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                    <Menu menuname={'Journal'}/>
+                </NavLink> 
             </Flex>
         </div>
     </Flex>
