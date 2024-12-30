@@ -5,10 +5,19 @@ import Flex from './Flex'
 import Menu from './Menu'
 import Logo from '../assets/logo.png'
 import { Link, NavLink } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { Bread } from '../Redux/Slices/BreadCrumb'
 
 
 
 const Navbar = () => {
+
+    const dispatch = useDispatch()
+
+    const handleClick=(item)=>{
+        dispatch(Bread(item))
+    }
+
   return (
    <>
    <div className=" py-7">
@@ -19,19 +28,19 @@ const Navbar = () => {
         </div>
         <div className="">
             <Flex className={'items-center gap-x-7'}> 
-                <NavLink to='/' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                <NavLink  onClick={()=>handleClick("Home")} to='/' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
                     <Menu menuname={'Home'}/>
                 </NavLink>
-                <NavLink to='/shop'  className={({ isActive }) =>`${isActive ? "font-bold text-black" : ""}`}>
+                <NavLink onClick={()=>handleClick("Shop")} to='/shop'  className={({ isActive }) =>`${isActive ? "font-bold text-black" : ""}`}>
                     <Menu menuname={'Shop'}/>
                 </NavLink>
-                <NavLink to='/about' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                <NavLink onClick={()=>handleClick("About")} to='/about' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
                     <Menu menuname={'About'}/>
                 </NavLink>
-                <NavLink to='/contacts' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                <NavLink onClick={()=>handleClick("Contacts")} to='/contacts' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
                     <Menu menuname={'Contacts'}/>
                 </NavLink>
-                <NavLink to='/productcart' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
+                <NavLink onClick={()=>handleClick("Journal")} to='/productcart' className={({ isActive }) =>`${isActive ? "font-bold text-black " : ""}`}>
                     <Menu menuname={'Journal'}/>
                 </NavLink> 
             </Flex>

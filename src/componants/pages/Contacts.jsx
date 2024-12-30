@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../Container'
 import Text from '../Text'
 import Flex from '../Flex'
-import { MdOutlineChevronRight } from 'react-icons/md'
 import Button2 from '../Button2'
 import Location from '../../assets/location.png'
 import Image from '../Image'
+import { FaAngleRight } from 'react-icons/fa'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 const Contacts = () => {
+  // let [icon,setIcon]=useState(true)
+
+  let data = useSelector(state=>(state.breadCrumb.previousValue))
   return (
     <>
     <div className="py-32">
@@ -15,9 +20,12 @@ const Contacts = () => {
             <Text as='h1' text={'Contacts'} className='text-[49px] text-hoverheadeingC font-bold font-dm mb-2'/>
             <div className="mt-2 mb-32">
                 <Flex className={'items-center'}>
-                    <Text as='h1' text={'Home'} className='text-headingC text-[12px] font-sans '/>
-                    <MdOutlineChevronRight className='text-headingC text-[12px] font-sans'/>
-                    <Text as='h1' text={'Contacts'} className='text-headingC text-[12px] font-sans '/>
+                  <Link to={data=="Home"?'/':`/${data}`}>
+                    <Text as='h1' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
+                  </Link>
+                  <FaAngleRight className='text-headingC text-sm font-sans'/>
+                    {/* {icon?(''):(<FaAngleRight className='text-headingC text-sm font-sans'/>)} */}
+                  <Text as='h1' text={'Contacts'} className='text-headingC text-[12px] font-sans '/>
                 </Flex>
             </div>
             <Text as='h1' text={"Fill up a Form"} className='text-[39px]  font-bold text-hoverheadeingC font-dm mb-9'/>

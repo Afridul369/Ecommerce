@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react'
 import Container from './Container'
 import Text from './Text'
 import Flex from './Flex'
-import { MdOutlineChevronRight } from 'react-icons/md'
 import Products from './Products'
 import Cap from '../assets/cap.png'
 import Rating from './Rating'
-import { FaCaretDown } from 'react-icons/fa'
+import { FaAngleRight, FaCaretDown } from 'react-icons/fa'
 import { FiMinus, FiPlus } from 'react-icons/fi'
+import { useSelector } from 'react-redux'
 
 
 const ProductCart = () => {
 
-
+  let data = useSelector(state=>(state.breadCrumb.previousValue))
 
   return (
     <>
@@ -21,8 +21,8 @@ const ProductCart = () => {
             <Text as='h1' text={'Product'} className='text-hoverheadeingC text-[40px] font-sans font-bold mb-2'/>
             <div className="mt-2 mb-20">
                 <Flex className={'items-center'}>
-                  <Text as='h1' text={'Home'} className='text-headingC text-[12px] font-sans '/>
-                  <MdOutlineChevronRight className='text-headingC text-[12px] font-sans'/>
+                  <Text as='h1' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
+                  <FaAngleRight className='text-headingC text-[12px] font-sans'/>
                   <Text as='h1' text={'ProductDetails'} className='text-headingC text-[12px] font-sans '/>
                 </Flex>
             </div>

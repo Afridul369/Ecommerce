@@ -3,10 +3,9 @@ import Text from './Text'
 import Flex from './Flex'
 import Container from './Container'
 import Image from './Image'
-import { MdOutlineChevronRight } from 'react-icons/md'
 import { ImCross } from 'react-icons/im'
 import { FiMinus, FiPlus } from 'react-icons/fi'
-import { FaCaretDown } from 'react-icons/fa'
+import { FaAngleRight, FaCaretDown } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeCart } from '../Redux/Slices/cartSlice'
 
@@ -15,7 +14,8 @@ const Cart = () => {
     const disPatch = useDispatch();
     const handleRemove=(item)=>{
         disPatch(removeCart(item))
-    } 
+    }
+    let data = useSelector(state=>(state.breadCrumb.previousValue)) 
     
   return (
     <>
@@ -24,8 +24,8 @@ const Cart = () => {
             <Text as='h1' text={'Cart'} className='text-[49px] text-hoverheadeingC font-bold font-dm mb-4'/>
             <div className="mt-2 mb-32">
                 <Flex className={'items-center'}>
-                <Text as='h1' text={'Home'} className='text-headingC text-[12px] font-sans '/>
-                <MdOutlineChevronRight className='text-headingC text-[12px] font-sans'/>
+                <Text as='h1' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
+                <FaAngleRight className='text-headingC text-[12px] font-sans'/>
                 <Text as='h1' text={'Cart'} className='text-headingC text-[12px] font-sans '/>
                 </Flex>
             </div>

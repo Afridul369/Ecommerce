@@ -2,9 +2,11 @@ import React from 'react'
 import Container from './Container'
 import Text from './Text'
 import Flex from './Flex'
-import { MdOutlineChevronRight } from 'react-icons/md'
+import { FaAngleRight } from 'react-icons/fa'
+import { useSelector } from 'react-redux'
 
 const AccountInfo = () => {
+  let data = useSelector(state=>(state.breadCrumb.previousValue))
   return (
     <>
     <div className="py-32">
@@ -12,8 +14,8 @@ const AccountInfo = () => {
         <Text as='h1' text={'My Account'} className='text-[49px] text-hoverheadeingC font-bold font-dm mb-4'/>
         <div className="mt-2 mb-32">
             <Flex className={'items-center gap-x-1'}>
-              <Text as='h1' text={'Home'} className='text-headingC text-[12px] font-sans '/>
-              <MdOutlineChevronRight className='text-headingC text-[12px] font-sans'/>
+              <Text as='h1' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
+              <FaAngleRight className='text-headingC text-[12px] font-sans'/>
               <Text as='h1' text={'My account '} className='text-headingC text-[12px] font-sans '/>
             </Flex>
         </div>
