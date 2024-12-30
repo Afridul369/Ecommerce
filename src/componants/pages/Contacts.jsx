@@ -13,6 +13,7 @@ const Contacts = () => {
   // let [icon,setIcon]=useState(true)
 
   let data = useSelector(state=>(state.breadCrumb.previousValue))
+  let data2 = useSelector(state=>(state.breadCrumb.BeforepreviousValue))
   return (
     <>
     <div className="py-32">
@@ -20,6 +21,10 @@ const Contacts = () => {
             <Text as='h1' text={'Contacts'} className='text-[49px] text-hoverheadeingC font-bold font-dm mb-2'/>
             <div className="mt-2 mb-32">
                 <Flex className={'items-center'}>
+                  <Link to={data2=="Home"?'/':`/${data2}`}>
+                    <Text as='h1' text={`${data2}`} className='text-headingC text-[12px] font-sans '/>
+                  </Link>
+                  <FaAngleRight className='text-headingC text-sm font-sans'/>
                   <Link to={data=="Home"?'/':`/${data}`}>
                     <Text as='h1' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
                   </Link>

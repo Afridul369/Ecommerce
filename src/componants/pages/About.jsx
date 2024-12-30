@@ -12,10 +12,12 @@ import Button2 from '../Button2'
 import AboutInfo from '../AboutInfo'
 import { useSelector } from 'react-redux'
 import { FaAngleRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   
   let data = useSelector(state=>(state.breadCrumb.previousValue))
+  let data2 = useSelector(state=>(state.breadCrumb.BeforepreviousValue))
   return (
     <>
     <div className="py-20">
@@ -23,7 +25,13 @@ const About = () => {
             <Text as='h1' text={'About'} className='text-hoverheadeingC text-[49px] font-sans font-bold'/>
             <div className="mt-2 mb-20">
               <Flex className={'items-center'}>
-                <Text as='h1' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
+                <Link to={data2=="Home"?'/':`/${data2}`}>
+                  <Text as='h1' text={`${data2}`} className='text-headingC text-[12px] font-sans '/>
+                </Link>
+                <FaAngleRight className='text-headingC text-[14px] font-sans'/>
+                <Link to={data=="Home"?'/':`/${data}`}>
+                  <Text as='h1' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
+                </Link>
                 <FaAngleRight className='text-headingC text-[14px] font-sans'/>
                 <Text as='h1' text={'About'} className='text-headingC text-[12px] font-sans '/>
               </Flex>

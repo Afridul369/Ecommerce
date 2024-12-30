@@ -55,9 +55,9 @@ const Footer = () => {
             <Text text={'company@domain.com'} as={'h1'} className='text-base font-bold font-dm text-hoverheadeingC pb-4'/>
             <Text text={'575 Crescent Ave. Quakertown, PA 18951'} as={'h1'} className='text-sm font-dm text-footercolor'/>
             </div>
-            <div className="">
+            <Link to={'/'}>
               <Image imgSrc={Footerlogo} imgAlt={'footerlogo'}/>
-            </div>
+            </Link>
             </Flex>
             </div>
 

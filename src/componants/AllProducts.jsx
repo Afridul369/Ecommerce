@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 
 const AllProducts = () => {
   let data = useSelector(state=>(state.breadCrumb.previousValue))
+  let data2 = useSelector(state=>(state.breadCrumb.BeforepreviousValue))
   return (
     <div>
        
@@ -16,6 +17,10 @@ const AllProducts = () => {
       <div className="py-16">
         <Text as='h1' text={'Products'} className='text-[49px] text-hoverheadeingC font-bold font-dm mb-1'/>
         <Flex className={'items-center '}>
+          <Link to={data2=="Home"?'/':`/${data2}`}>
+            <Text as='p' text={`${data2}`} className='text-headingC text-[12px] font-sans '/>
+          </Link>
+          <FaAngleRight className='text-headingC text-sm'/>
           <Link to={data=="Home"?'/':`/${data}`}>
             <Text as='p' text={`${data}`} className='text-headingC text-[12px] font-sans '/>
           </Link>
